@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="robin.js"></script>
+    <h1>vectores</h1>
+    <div>
+        <label for=""> identificacion <input type="text" id="txtidi" value="15"> </label>
+    </div>
+    <br>
+    <label for="">primer nombre <input type="text" id="txtnombre1" value="robin"></label>
+    <div>
+        <br>
+        <label for="">segundo nombre <input type="text" id="txtnombre2" value="son"> </label>
+    </div>
+    <br>
+    <label for="">primer apellido <input type="text" id="txtape1" value="truque"> </label>
+    <div>
+        <br>
+        <label for="">segundo apellido <input type="text" id="txtape2" value="valencia"></label>
+    </div>
+    <br>
+    <input type="button" value="agregar inicio"
+        onclick="document.getElementById(agregarinicio(txtidi.value , txtnombre1.value , txtnombre2.value , txtape1.value,txtape2.value ))"><br>
+    <p></p>
+
+    <input type="button" value="agregar fin"
+        onclick="document.getElementById(agregarfin(txtidi.value , txtnombre1.value , txtnombre2.value , txtape1.value,txtape2.value ))"><br>
+    <p></p>
+
+    <input type="button" value="mostrartodo"
+        onclick="document.getElementById(mostrartodo(txtidi.value , txtnombre1.value , txtnombre2.value , txtape1.value,txtape2.value ))"><br>
+    <p></p>
+
+    <input type="button" value="buscar"
+        onclick="document.getElementById(buscar(txtidi.value , txtnombre1.value , txtnombre2.value , txtape1.value,txtape2.value ))"><br>
+    <p></p>
+
+    <input type="button" value="eliminar"
+        onclick="document.getElementById(eliminar(txtidi.value , txtnombre1.value , txtnombre2.value , txtape1.value,txtape2.value ))"><br>
+    <p></p>
+
+    <input type="button" value="agregar"
+        onclick="document.getElementById(agregar(txtidi.value , txtnombre1.value , txtnombre2.value , txtape1.value,txtape2.value ))">
+    <br>
+    <p></p>
+
+    <input type="button" value="agregar_2"
+        onclick="document.getElementById(agregar2(txtidi.value , txtnombre1.value , txtnombre2.value , txtape1.value,txtape2.value ))">
+
+
+    <h1>matrices</h1>
+    <div>
+        <label for=""> identificacion <input type="text" id="txtid"> </label>
+    </div>
+    <br>
+    <label for="">primer nombre <input type="text" id="txtnom1"></label>
+    <div>
+        <br>
+        <label for="">segundo nombre <input type="text" id="txtnom2"> </label>
+    </div>
+    <br>
+    <label for="">primer apellido <input type="text" id="txtap1"> </label>
+    <div>
+        <br>
+        <label for="">segundo apellido <input type="text" id="txtap2"></label>
+    </div>
+
+    <input type="button" value="actualizar"
+        onclick="document.getElementById(a2(txtidi.value , txtno1.value , txtno2.value , txta1.value,txta2.value ))">
+
+
+    <input type="button" value="eliminar_2"
+        onclick="document.getElementById(eliminar2(txtidi.value , txtno1.value , txtno2.value , txta1.value,txta2.value ))">
+
+    <h1>objetos</h1>
+    <div>
+        <label for="">pago 1 <input type="text" id="txtpago"></label><br><p></p>
+        <div>
+            <div>
+                <label for="">pago 2 <input type="text" id="txtpago2"></label><br><p></p>
+                <div>
+                    <p id="Ptotal">suma</p>
+                    <p id="Ptotal1">multi</p>
+               
+    <input type="button" value="total pagos"
+    onclick="document.getElementById(pago(txtpago.value , txtpago2.value  ))"> 
+<h1>tabla</h1>
+<div>
+    <label for="">numero de tabla <input type="number" id="txttabla"></label><br><p></p>
+    <div>
+        <p id="Ptabla">tabla </p>
+        <input type="button" value="tabla"
+        onclick="document.getElementById(tabla(txttabla.value   ))"> 
+</body>
+</html>
+</body>
+
+</html>
